@@ -66,7 +66,7 @@ namespace lexAnalyzerForms
                 return Form1.myStorage[i];
             }
 
-            public void Ops()
+            public void FillMagazine()
             {
                 //-while (lex.Type != LexemType.END && magasin[i].state != StateLetter.END)
                 Lexem lex = Lex(); // берём нулевую лексему из myStorage
@@ -98,6 +98,7 @@ namespace lexAnalyzerForms
             public void Pair(StateLetter stateLex, LexemType type)
             {
                 List<StateParser> stateParser = new List<StateParser>();
+
                 if (stateLex == StateLetter.F && type == LexemType.NAME)
                 {
                     for (int i = 0; i < 6; i++) { stateParser.Add(new StateParser()); }

@@ -30,7 +30,7 @@ namespace lexAnalyzerForms
             // tbOutput.Text = lexer.GetOutputText();
             
             ParserClass.Parser parser = new ParserClass.Parser();
-            parser.Ops();
+            parser.FillMagazine();
             tbOutput.Text += parser.printMagasin();
         }
     }
